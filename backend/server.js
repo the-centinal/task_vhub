@@ -1,4 +1,3 @@
-// server.js
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -21,20 +20,7 @@ var corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json())
 
-// // Connect to MongoDB Atlas
-// mongoose.connect('mongodb+srv://praveenyadav340:lbHdMFDYEJNYQRWS@cluster0.ozrfreb.mongodb.net/user_vhub?retryWrites=true&w=majority&appName=Cluster0', {
-//   // useNewUrlParser: true,
-//   // useUnifiedTopology: true,
-// });
 
-// // Check MongoDB Atlas connection
-// mongoose.connection.on('connected', () => {
-//     console.log('Connected to MongoDB Atlas');
-//   });
-  
-//   mongoose.connection.on('error', (err) => {
-//     console.error('Error connecting to MongoDB Atlas:', err);
-//   });
 
 // MongoDB schema and model
 const UserSchema = new mongoose.Schema({
