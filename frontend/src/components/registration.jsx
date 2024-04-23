@@ -19,7 +19,6 @@ const navigate = useNavigate();
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\S]{8,}$/;
 
-    // const isUsernameValid = username.trim() !== '';
     const isEmailValid = emailRegex.test(email);
     const isPasswordValid = passwordRegex.test(password);
 
